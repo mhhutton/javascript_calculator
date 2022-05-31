@@ -11,4 +11,8 @@
 }
 .calc-btn {
   border: 5px solid red;
+  cursor: pointer;
+}
+#display {
+  cursor: text;
 }
