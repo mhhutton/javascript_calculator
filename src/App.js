@@ -1,8 +1,16 @@
 import './App.css';
+
+import { useEffect, useState } from 'react';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, Row, Col } from 'react-bootstrap';
 
 function App() {
+  const [display, setDisplay] = useState(0);
+
+  const handleDisplay = (input) => {
+
+  }
   return (
     <div className="App">
       <Container id="calc-box">
@@ -11,12 +19,13 @@ function App() {
           id="display"
           lg={12}
         >
-          Display
+          {display}
         </Row>
         <Row>
           <Col
             className="calc-btn" id="clear"
             xs={4}
+            onClick={() => {setDisplay(0)}}
           >
             Clear
           </Col>
